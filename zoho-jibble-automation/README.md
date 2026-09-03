@@ -157,8 +157,6 @@ Expected response: `"status": 201` and a matching project appears in Jibble.
 2. Confirm a `POST` request appears automatically in the Flask terminal.
 3. Confirm a matching project appears in Jibble.
 
-> 📸 *Screenshot: New customer in Zoho Books alongside the auto-created Jibble project — `docs/screenshots/end-to-end-test.png`*
-
 ---
 
 ## Auto-start on PC boot (Windows)
@@ -181,7 +179,6 @@ To keep this running automatically without manually opening terminals every time
 5. **Conditions tab**: uncheck **"Start the task only if the computer is on AC power"** if this runs on a laptop.
 6. Save. Restart your PC to confirm both windows launch automatically.
 
-> 📸 *Screenshot: Task Scheduler setup — `docs/screenshots/task-scheduler-config.png`*
 
 ---
 
