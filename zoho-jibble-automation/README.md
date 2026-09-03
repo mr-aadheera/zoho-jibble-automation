@@ -2,7 +2,7 @@
 
 Automatically creates a **Jibble project** the moment a **new Customer is added in Zoho Books**, using the customer's name and Zoho Customer ID — no manual data entry required.
 
-Built for [Aarif & Associates LLP](https://auditoraarif.com/), Trichy, as part of an internal office automation stack that also includes WhatsApp (WATI) invoice/payment automation and Vi CPaaS call handling.
+Built as an internal office automation project by **ANFI Technologies**, Tiruchirappalli.
 
 ---
 
@@ -65,7 +65,7 @@ pip install -r requirements.txt
 1. Log into Jibble → **Organization Settings** → **API Credentials** tab.
 2. Click **Create New Secret**, name it, and copy the **Client ID** and **Client Secret**.
 
-> 📸 *Screenshot: Jibble API Credentials screen — `docs/screenshots/jibble-api-credentials.png`*
+![Jibble API Credentials](docs/screenshots/jibble-api-credentials.png)
 
 ### 3. Get your ngrok auth token
 
@@ -99,7 +99,7 @@ You should see:
 Running on http://0.0.0.0:5000
 ```
 
-> 📸 *Screenshot: Flask server running successfully — `docs/screenshots/flask-running.png`*
+![Flask server running](docs/screenshots/flask-running.png)
 
 ### 6. Start the ngrok tunnel (in a separate terminal)
 
@@ -125,7 +125,7 @@ curl -X POST https://your-random-name.ngrok-free.dev/create-jibble-project ^
 
 Expected response: `"status": 201` and a matching project appears in Jibble.
 
-> 📸 *Screenshot: Successful curl test + matching Jibble project — `docs/screenshots/curl-test-success.png`*
+![Successful curl test](docs/screenshots/curl-test-success.png)
 
 ### 8. Set up the webhook in Zoho Books
 
@@ -149,7 +149,7 @@ Expected response: `"status": 201` and a matching project appears in Jibble.
      Use the **Insert Placeholder** dropdown to insert the actual field tags rather than typing them by hand.
 7. Save and activate the rule.
 
-> 📸 *Screenshot: Completed Zoho Books webhook configuration — `docs/screenshots/zoho-webhook-config.png`*
+![Zoho Books webhook configuration](docs/screenshots/zoho-webhook-config.png)
 
 ### 9. Test end-to-end
 
@@ -178,7 +178,6 @@ To keep this running automatically without manually opening terminals every time
 4. **Actions tab**: New → **Start a program** → point it at `start_automation.bat`.
 5. **Conditions tab**: uncheck **"Start the task only if the computer is on AC power"** if this runs on a laptop.
 6. Save. Restart your PC to confirm both windows launch automatically.
-
 
 ---
 
@@ -215,7 +214,6 @@ This setup is designed for local development and testing. For continuous, reliab
 ## Author
 
 **Aadhil Mohamed** — ANFI Technologies, Tiruchirappalli
-Built for [Aarif & Associates LLP](https://auditoraarif.com/)
 
 ## License
 
